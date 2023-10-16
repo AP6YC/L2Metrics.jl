@@ -3,6 +3,10 @@ uuid = "4921383a-abe2-4720-be29-9ff650b2e707"
 authors = ["Sasha Petrenko <sap625@umsystem.edu> and contributors"]
 version = "0.1.0"
 
+[deps]
+DocStringExtensions = "ffbed154-4ef7-542d-bbb7-c09d3a79fcae"
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+
 [compat]
 julia = "1"
 
