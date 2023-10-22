@@ -2,7 +2,7 @@ name: CI
 on:
   push:
     branches:
-      - master
+      - main
     tags: ['*']
   pull_request:
   workflow_dispatch:
@@ -19,13 +19,13 @@ jobs:
       fail-fast: false
       matrix:
         version:
-          - '1.6'
-          - '1.9'
-          - 'nightly'
+          - '1.6'           # LTS Julia version
+          - '1.9'           # The version being used when writing this
+          - 'nightly'       # Latest Julia version
         os:
-          - ubuntu-latest
+          - ubuntu-latest   # Common linux variant
         arch:
-          - x64
+          - x64             # Only 64-bit
     steps:
       - uses: actions/checkout@v3
       - uses: julia-actions/setup-julia@v1
