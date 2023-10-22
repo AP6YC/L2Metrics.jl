@@ -34,6 +34,7 @@ using
 # Full import statements
 import
     JSON,
+    Pkg,
     PythonCall
 
 # Precompile concrete type methods
@@ -48,7 +49,7 @@ using PrecompileSignatures: @precompile_signatures
 # -----------------------------------------------------------------------------
 
 # Library code
-include("l2/lib.jl")
+include("lib/lib.jl")
 
 # -----------------------------------------------------------------------------
 # INIT
@@ -65,6 +66,10 @@ include("l2/lib.jl")
 # -----------------------------------------------------------------------------
 # EXPORTS
 # -----------------------------------------------------------------------------
+
+export
+
+    L2METRICS_VERSION
 
 # -----------------------------------------------------------------------------
 # PRECOMPILE

@@ -23,3 +23,6 @@ include("common.jl")
 
 # # Agent definitions that depend on scenario definitions
 # include("agents.jl")
+
+# Package version constant
+include("version.jl")
