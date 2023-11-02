@@ -6,7 +6,7 @@ end
 
 ---
 
-These pages serve as the official documentation for the L2Metrics.jl Julia package.
+These pages serve as the official documentation for the `L2Metrics.jl` Julia package.
 
 See the [Index](@ref main-index) for the complete list of documented functions and types.
 
